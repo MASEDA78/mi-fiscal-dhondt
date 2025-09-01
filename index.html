@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Fiscal D’Hondt</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="https://raw.githubusercontent.com/MASEDA78/mi-fiscal-dhondt/main/desender.png" alt="Logo" class="logo" />
+    <h1>Distribución de Bancas - Sistema D’Hondt</h1>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <div class="candidate" data-party="Fuerza Patria" data-name="Macias Eugenia" data-img="https://raw.githubusercontent.com/MASEDA78/mi-fiscal-dhondt/main/Macias%20eugenia.jpg">
+        <label>Fuerza Patria - Macias Eugenia</label>
+        <input type="number" placeholder="Votos" />
+      </div>
+      <div class="candidate" data-party="Somos Buenos Aires" data-name="Aristizábal Juan Martín" data-img="https://raw.githubusercontent.com/MASEDA78/mi-fiscal-dhondt/main/Aristizabal-Juan-Martin.jpg">
+        <label>Somos Buenos Aires - Aristizábal Juan Martín</label>
+        <input type="number" placeholder="Votos" />
+      </div>
+      <div class="candidate" data-party="LLA-Pro" data-name="Sergio Sosa" data-img="https://raw.githubusercontent.com/MASEDA78/mi-fiscal-dhondt/main/sosa-Sergio.jpg">
+        <label>LLA-Pro - Sergio Sosa</label>
+        <input type="number" placeholder="Votos" />
+      </div>
+      <div class="candidate" data-party="Unión Liberal" data-name="Camara Nahuel" data-img="https://raw.githubusercontent.com/MASEDA78/mi-fiscal-dhondt/main/Camara%20Nahuel.jpg">
+        <label>Unión Liberal - Camara Nahuel</label>
+        <input type="number" placeholder="Votos" />
+      </div>
+      <div class="botones">
+        <button onclick="calcularDhondt()">Calcular Bancas</button>
+        <button onclick="exportarPDF()">Exportar a PDF</button>
+      </div>
+    </section>
+
+    <section id="resultados"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
