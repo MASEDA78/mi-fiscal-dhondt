@@ -17,28 +17,32 @@
     <section class="input-section">
       <div class="candidate" data-party="Fuerza Patria" data-name="Macias Eugenia" data-img="https://raw.githubusercontent.com/MASEDA78/mi-fiscal-dhondt/main/Macias%20eugenia.jpg">
         <label>Fuerza Patria - Macias Eugenia</label>
-        <input type="number" placeholder="Votos" />
+        <input type="number" placeholder="Votos" min="0" />
       </div>
       <div class="candidate" data-party="Somos Buenos Aires" data-name="Aristizábal Juan Martín" data-img="https://raw.githubusercontent.com/MASEDA78/mi-fiscal-dhondt/main/Aristizabal-Juan-Martin.jpg">
         <label>Somos Buenos Aires - Aristizábal Juan Martín</label>
-        <input type="number" placeholder="Votos" />
+        <input type="number" placeholder="Votos" min="0" />
       </div>
       <div class="candidate" data-party="LLA-Pro" data-name="Sergio Sosa" data-img="https://raw.githubusercontent.com/MASEDA78/mi-fiscal-dhondt/main/sosa-Sergio.jpg">
         <label>LLA-Pro - Sergio Sosa</label>
-        <input type="number" placeholder="Votos" />
+        <input type="number" placeholder="Votos" min="0" />
       </div>
       <div class="candidate" data-party="Unión Liberal" data-name="Camara Nahuel" data-img="https://raw.githubusercontent.com/MASEDA78/mi-fiscal-dhondt/main/Camara%20Nahuel.jpg">
         <label>Unión Liberal - Camara Nahuel</label>
-        <input type="number" placeholder="Votos" />
+        <input type="number" placeholder="Votos" min="0" />
       </div>
       <div class="botones">
-        <button onclick="calcularDhondt()">Calcular Bancas</button>
-        <button onclick="exportarPDF()">Exportar a PDF</button>
+        <button onclick="calcularDhondt()" aria-label="Calcular distribución de bancas">Calcular Bancas</button>
+        <button onclick="exportarPDF()" aria-label="Exportar resultados a PDF">Exportar a PDF</button>
       </div>
     </section>
 
     <section id="resultados"></section>
   </main>
+
+  <footer>
+    <p>Mi Fiscal D’Hondt – Castelli, Buenos Aires. Democracia con memoria, transparencia y dignidad.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
